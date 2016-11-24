@@ -1,0 +1,32 @@
+.upbox { width: 100%; }
+.upbox i { float:right;}
+.upbox .ProgressBar { background-color: #CCC; height: 2px; }
+.upbox .ProgressBar b { background-color: #09F; width: 0%; display: block; height: 2px; }
+.loading { text-align: center; position: relative; }
+.loading span { position: absolute; width: 100%; text-align: center; top: 50%; left: 0px; height: 20px; margin-top: -10px; color: #999; font-size: 12px; line-height: 20px; }
+#Filedata input { display:none;}
+
+.button, .submit { margin: auto; text-align: center; }
+.apply .formlist .form-name { float: left; width: 30%; }
+.desc .error { color: #D90000; }
+.apply .upimg { padding: 10px; }
+.apply .upimg h3 { border-bottom: 1px solid #eee; }
+.apply #imglist { overflow: hidden; padding: 0px; margin-right: -10px; margin-left: -10px; }
+.apply #imglist li { float: left; width: auto; overflow: hidden; position: relative;}
+.apply #imglist li dl { margin: 5px; position: relative; overflow: hidden; min-width:60px;}
+.apply #imglist li dl .mask { height: 100%; width: 100%; position: absolute; padding-top:0px !important; background: none !important;}
+.apply #imglist li dl.mk .mask p, .apply #imglist li .cover .mask p {  border: 3px solid #0C6; height:54px;}
+
+.apply #imglist li dl p .set-cover {vertical-align: top; vertical-align: middle; display: none; background-color: #0C6; position: absolute; font-weight: normal; color: #FFF; padding-right: 3px; padding-left: 3px; font-size: 12px; }
+.apply #imglist li dl.mk .mask p .set-cover, .apply #imglist li .cover .mask p .set-cover { display: inline-block; }
+
+.apply #imglist li dl .del { height:54px; display: none; text-align: center;  }
+.apply #imglist li dl.mk .mask .del { display:block; background-color: rgba(255, 51, 51, 0.6); }
+
+.apply #imglist li dl.mk .mask .del img { width: 25px; height: 25px; margin-top: 25px; }
+.apply #imglist li img {
+height: 60px;
+width: auto;
+vertical-align: top;
+}
+.apply #imglist #Filedata .webuploader-pick  { width:70px; height:70px !important;}
