@@ -30,18 +30,23 @@ if($_FILES){
 	 } 
 }
 
+function htmlspecial($data)
+{
+	return htmlspecialchars($data);
+}
+
 if (!empty($file['name'])) {
 
 
-	$name = htmlspecialchars($post['title']);
-	$sort = htmlspecialchars($post['Ccph6']);
-	$sex = htmlspecialchars($post['pa2RG']);
-	$tel = htmlspecialchars($post['OSYBL']);
+	$name = htmlspecial($post['title']);
+	$sort = htmlspecial($post['Ccph6']);
+	$sex = htmlspecial($post['pa2RG']);
+	$tel = htmlspecial($post['OSYBL']);
 /*	$verify = htmlspecialchars($post['code']);*/
-	$qq = htmlspecialchars($post['Qc6Z4']);
-	$company = htmlspecialchars($post['mAjFK']);
+	$qq = htmlspecial($post['Qc6Z4']);
+	$company = htmlspecial($post['mAjFK']);
 	/*$summary_company = htmlspecialchars($post['OntQ6']);*/
-	$summary_own = htmlspecialchars($post['field_3']);
+	$summary_own = htmlspecial($post['field_3']);
 	
 	$pos = strrpos($file['name'], '.');
 	$file_name = substr($file['name'], $pos);
